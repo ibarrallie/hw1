@@ -458,3 +458,18 @@ VALUES (
   "Selena",
   "Kyle"
 );
+
+.mode column
+.headers off
+
+.print "Movies"
+.print "======"
+.print ""
+SELECT movies.title, movies.year, movies.rating, studios.name  
+FROM movies INNER JOIN studios ON studios.id = studio_id;
+
+
+.print ""
+.print "Top Cast"
+.print "========"
+.print ""
