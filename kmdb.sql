@@ -198,6 +198,61 @@ VALUES (
   2
 );
 
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Christian",
+  "Bale",
+  3
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Gary",
+  "Oldman",
+  3
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Tom",
+  "Hardy",
+  3
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Joseph",
+  "Gordon-Levitt",
+  3
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Anne",
+  "Hathaway",
+  3
+);
+
 INSERT INTO roles (
     movie_id,
     actor_id,
