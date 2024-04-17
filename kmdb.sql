@@ -395,3 +395,66 @@ VALUES (
   "Rachel",
   "Dawes"
 );
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  3,
+  12,
+  "Bruce",
+  "Wayne"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  3,
+  13,
+  "James",
+  "Gordon"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+)
+VALUES (
+  3,
+  14,
+  "Bane"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  3,
+  15,
+  "John",
+  "Blake"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  3,
+  16,
+  "Selena",
+  "Kyle"
+);
