@@ -44,11 +44,37 @@ VALUES (
 1
 );
 
+INSERT INTO movies (
+  title,
+  year,
+  rating,
+  studio_id
+)
+VALUES (
+  "The Dark Knight",
+2008,
+"PG-13",
+1
+);
+
+INSERT INTO movies (
+  title,
+  year,
+  rating,
+  studio_id
+)
+VALUES (
+  "The Dark Knight Rises",
+2012,
+"PG-13",
+1
+);
+
 INSERT INTO studios (
   name
 )
 VALUES (
-  "Warner Bros Pictures"
+  "Warner Bros."
 );
 
 INSERT INTO actors (
@@ -117,3 +143,80 @@ VALUES (
   1
 );
 
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  1,
+  "Bruce",
+  "Wayne"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  2,
+  "Alfred",
+  "Pennyworth"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  3,
+  "Henri",
+  "Ducard"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  4,
+  "Rachel",
+  "Dawes"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  5,
+  "James",
+  "Gordon"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  1,
+  6,
+  "Jonathan",
+  "Crane"
+);
