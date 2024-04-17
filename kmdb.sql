@@ -425,7 +425,7 @@ VALUES (
 INSERT INTO roles (
     movie_id,
     actor_id,
-    first_name,
+    first_name
 )
 VALUES (
   3,
