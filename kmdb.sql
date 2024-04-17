@@ -143,6 +143,61 @@ VALUES (
   1
 );
 
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Christian",
+  "Bale",
+  2
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Heath",
+  "Ledger",
+  2
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Aaron",
+  "Eckhart",
+  2
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Michael",
+  "Caine",
+  2
+);
+
+INSERT INTO actors (
+  first_name,
+  last_name,
+  movie_id
+)
+VALUES (
+  "Maggie",
+  "Gyllenhaal",
+  2
+);
+
 INSERT INTO roles (
     movie_id,
     actor_id,
@@ -219,4 +274,69 @@ VALUES (
   6,
   "Jonathan",
   "Crane"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  2,
+  7,
+  "Bruce",
+  "Wayne"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  2,
+  8,
+  "The",
+  "Joker"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  2,
+  9,
+  "Harvey",
+  "Dent"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  2,
+  10,
+  "Alfred",
+  "Pennyworth"
+);
+
+INSERT INTO roles (
+    movie_id,
+    actor_id,
+    first_name,
+    last_name
+)
+VALUES (
+  2,
+  11,
+  "Rachel",
+  "Dawes"
 );
