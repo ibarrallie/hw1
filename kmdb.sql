@@ -19,8 +19,7 @@ CREATE TABLE studios (
 CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT,
-    last_name TEXT,
-    movie_id INTEGER
+    last_name TEXT
 );
 
 CREATE TABLE roles (
@@ -79,178 +78,110 @@ VALUES (
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Christian",
-  "Bale",
-  1
+  "Bale"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Michael",
-  "Caine",
-  1
+  "Caine"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Liam",
-  "Neeson",
-  1
+  "Neeson"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
-  "Rachel",
-  "Dawes",
-  1
+  "Katie",
+  "Holmes"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Gary",
-  "Oldman",
-  1
+  "Oldman"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Cillian",
-  "Murphy",
-  1
+  "Murphy"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
-)
-VALUES (
-  "Christian",
-  "Bale",
-  2
-);
-
-INSERT INTO actors (
-  first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Heath",
-  "Ledger",
-  2
+  "Ledger"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Aaron",
-  "Eckhart",
-  2
+  "Eckhart"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
-)
-VALUES (
-  "Michael",
-  "Caine",
-  2
-);
-
-INSERT INTO actors (
-  first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Maggie",
-  "Gyllenhaal",
-  2
+  "Gyllenhaal"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
-)
-VALUES (
-  "Christian",
-  "Bale",
-  3
-);
-
-INSERT INTO actors (
-  first_name,
-  last_name,
-  movie_id
-)
-VALUES (
-  "Gary",
-  "Oldman",
-  3
-);
-
-INSERT INTO actors (
-  first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Tom",
-  "Hardy",
-  3
+  "Hardy"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Joseph",
-  "Gordon-Levitt",
-  3
+  "Gordon-Levitt"
 );
 
 INSERT INTO actors (
   first_name,
-  last_name,
-  movie_id
+  last_name
 )
 VALUES (
   "Anne",
-  "Hathaway",
-  3
+  "Hathaway"
 );
 
 INSERT INTO roles (
@@ -339,7 +270,7 @@ INSERT INTO roles (
 )
 VALUES (
   2,
-  7,
+  1,
   "Bruce",
   "Wayne"
 );
@@ -352,7 +283,7 @@ INSERT INTO roles (
 )
 VALUES (
   2,
-  8,
+  7,
   "The",
   "Joker"
 );
@@ -365,7 +296,7 @@ INSERT INTO roles (
 )
 VALUES (
   2,
-  9,
+  8,
   "Harvey",
   "Dent"
 );
@@ -378,7 +309,7 @@ INSERT INTO roles (
 )
 VALUES (
   2,
-  10,
+  2,
   "Alfred",
   "Pennyworth"
 );
@@ -391,7 +322,7 @@ INSERT INTO roles (
 )
 VALUES (
   2,
-  11,
+  9,
   "Rachel",
   "Dawes"
 );
@@ -404,7 +335,7 @@ INSERT INTO roles (
 )
 VALUES (
   3,
-  12,
+  1,
   "Bruce",
   "Wayne"
 );
@@ -417,7 +348,7 @@ INSERT INTO roles (
 )
 VALUES (
   3,
-  13,
+  5,
   "James",
   "Gordon"
 );
@@ -429,7 +360,7 @@ INSERT INTO roles (
 )
 VALUES (
   3,
-  14,
+  10,
   "Bane"
 );
 
@@ -441,7 +372,7 @@ INSERT INTO roles (
 )
 VALUES (
   3,
-  15,
+  11,
   "John",
   "Blake"
 );
@@ -454,7 +385,7 @@ INSERT INTO roles (
 )
 VALUES (
   3,
-  16,
+  12,
   "Selena",
   "Kyle"
 );
@@ -473,3 +404,7 @@ FROM movies INNER JOIN studios ON studios.id = studio_id;
 .print "Top Cast"
 .print "========"
 .print ""
+SELECT movies.title, actors.first_name, actors.last_name, roles.first_name, roles.last_name
+FROM roles
+INNER JOIN movies ON movie_id = movies.id
+INNER JOIN actors ON actor_id = actors.id;
